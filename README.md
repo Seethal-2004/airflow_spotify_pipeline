@@ -4,7 +4,7 @@ A real-time data pipeline that extracts music metadata from Spotify, transforms 
 
 ### 🗺️ Architecture
 
-![Architecture](Architecture.jpeg)
+![Architecture](architecture.jpeg)
 
 
 ### 🚀 Tech Stack
