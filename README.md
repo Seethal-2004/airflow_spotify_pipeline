@@ -21,7 +21,7 @@ A real-time data pipeline that extracts music metadata from Spotify, transforms 
 
 1. ⚙️**Lambda 1 – Extraction**
    - Extracts Spotify playlist data using Spotipy
-   - Saves raw JSON to `s3://ec2kafkabucket/raw_data/to_processed/`
+   - Saves raw JSON to `s3://ec2bucketkafka/raw_data/to_processed/`
 
 2. 🧪**Lambda 2 – Transform & Kafka**
    - Reads raw files from S3
@@ -32,7 +32,7 @@ A real-time data pipeline that extracts music metadata from Spotify, transforms 
 3. 🔬**AWS Glue**
    - Reads from Kafka
    - Cleans, deduplicates, merges data
-   - Saves unified CSV to `s3://ec2gluebucket/processed-data/spotify_clean_data.csv/`
+   - Saves unified CSV to `s3://ec2bucketglue/processed_data/spotify_clean_data.csv/`
 
 4. ❄️**Snowflake**
    - Reads from S3 using external stage
